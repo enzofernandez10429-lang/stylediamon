@@ -46,9 +46,6 @@ const selectedProduct =
 // Formato de pesos argentinos
 function formatPrice(price) {
 
-  if (price === 0) {
-    return "Consultar";
-  }
 
   return "$" + price.toLocaleString("es-AR");
 }
