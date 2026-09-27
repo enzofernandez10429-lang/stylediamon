@@ -32,7 +32,7 @@ const products = [
   {
     id: "5600-560",
     diamonds: "5.600 + 560",
-    price: 0
+    price: 55000
   }
 ];
 
