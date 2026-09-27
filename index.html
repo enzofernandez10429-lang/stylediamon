@@ -1,1 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleDiamon | Diamantes Free Fire</title>
+  <meta name="description" content="Compra diamantes de Free Fire de forma rápida y sencilla.">
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <span>💎</span> StyleDiamon
+    </div>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Diamantes</a>
+      <a href="#como-comprar">Cómo comprar</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <a class="whatsapp-top"
+       href="https://wa.me/5491131361153"
+       target="_blank">
+       WhatsApp
+    </a>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+
+      <div class="hero-content">
+        <span class="badge">💎 RECARGAS FREE FIRE</span>
+
+        <h1>
+          Tus diamantes,<br>
+          <strong>rápido y fácil.</strong>
+        </h1>
+
+        <p>
+          Elegí tu paquete, ingresá tu ID de Free Fire
+          y realizá el pago. Después enviá el comprobante
+          por WhatsApp.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#productos" class="btn primary">
+            Comprar diamantes
+          </a>
+
+          <a href="#como-comprar" class="btn secondary">
+            ¿Cómo funciona?
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="diamond-big">💎</div>
+        <h2>StyleDiamon</h2>
+        <p>Diamantes Free Fire</p>
+
+        <div class="hero-price">
+          Recargas rápidas
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- BENEFICIOS -->
+    <section class="benefits">
+
+      <div class="benefit">
+        <span>⚡</span>
+        <div>
+          <h3>Rápido</h3>
+          <p>Procesamos tu pedido después de verificar el pago.</p>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <span>🔒</span>
+        <div>
+          <h3>Seguro</h3>
+          <p>No necesitamos tu contraseña de Free Fire.</p>
+        </div>
+      </div>
+
+      <div class="benefit">
+        <span>📲</span>
+        <div>
+          <h3>WhatsApp</h3>
+          <p>Atención directa para ayudarte con tu pedido.</p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="section">
+
+      <div class="section-title">
+        <span>CATÁLOGO</span>
+        <h2>Elegí tus diamantes</h2>
+        <p>Seleccioná el paquete que quieras comprar.</p>
+      </div>
+
+      <div id="productsGrid" class="products-grid"></div>
+
+    </section>
+
+
+    <!-- COMPRA -->
+    <section id="compra" class="purchase-section">
+
+      <div class="purchase-card">
+
+        <div class="section-title left">
+          <span>REALIZAR PEDIDO</span>
+          <h2>Completá tus datos</h2>
+          <p>Ingresá correctamente tu ID de Free Fire.</p>
+        </div>
+
+        <form id="purchaseForm">
+
+          <label for="playerId">
+            ID de jugador
+          </label>
+
+          <input
+            type="text"
+            id="playerId"
+            placeholder="Ej: 123456789"
+            required
+          >
+
+          <label for="playerName">
+            Nombre de jugador (opcional)
+          </label>
+
+          <input
+            type="text"
+            id="playerName"
+            placeholder="Tu nombre en Free Fire"
+          >
+
+          <label for="selectedProduct">
+            Paquete seleccionado
+          </label>
+
+          <select id="selectedProduct" required>
+            <option value="">Seleccioná un paquete</option>
+          </select>
+
+          <label for="payment">
+            Método de pago
+          </label>
+
+          <select id="payment" required>
+            <option value="">Seleccioná un método</option>
+            <option>Mercado Pago</option>
+            <option>Ualá</option>
+            <option>Naranja X</option>
+            <option>Banco Galicia</option>
+          </select>
+
+          <button type="submit" class="btn primary full">
+            Continuar con el pedido
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+    <!-- PAGO -->
+    <section id="pago" class="payment-section hidden">
+
+      <div class="payment-card">
+
+        <div class="payment-icon">💳</div>
+
+        <h2>Realizá el pago</h2>
+
+        <p>
+          Transferí el importe correspondiente utilizando
+          cualquiera de los métodos disponibles.
+        </p>
+
+        <div class="payment-data">
+
+          <div class="data-row">
+            <span>Titular</span>
+            <strong>ENZO LEONOR RAMIREZ BRITOS</strong>
+          </div>
+
+          <div class="data-row">
+            <span>CVU</span>
+            <strong id="cvu">
+              0000003100087877121043
+            </strong>
+          </div>
+
+          <div class="data-row">
+            <span>Medios</span>
+            <strong>
+              Mercado Pago · Ualá · Naranja X · Galicia
+            </strong>
+          </div>
+
+        </div>
+
+        <button id="copyCvu" class="btn secondary full">
+          Copiar CVU
+        </button>
+
+        <button id="whatsappButton" class="btn whatsapp full">
+          📲 Enviar comprobante por WhatsApp
+        </button>
+
+        <p class="small-text">
+          Guardá el comprobante de la transferencia
+          y envialo por WhatsApp para que podamos verificar
+          tu pedido.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- COMO COMPRAR -->
+    <section id="como-comprar" class="section">
+
+      <div class="section-title">
+        <span>PROCESO</span>
+        <h2>¿Cómo comprar?</h2>
+      </div>
+
+      <div class="steps">
+
+        <div class="step">
+          <div>01</div>
+          <h3>Elegí</h3>
+          <p>Seleccioná el paquete de diamantes que quieras.</p>
+        </div>
+
+        <div class="step">
+          <div>02</div>
+          <h3>Ingresá tu ID</h3>
+          <p>Colocá correctamente tu ID de jugador de Free Fire.</p>
+        </div>
+
+        <div class="step">
+          <div>03</div>
+          <h3>Transferí</h3>
+          <p>Realizá el pago mediante uno de los métodos disponibles.</p>
+        </div>
+
+        <div class="step">
+          <div>04</div>
+          <h3>Enviá comprobante</h3>
+          <p>Mandanos el comprobante por WhatsApp.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq-section">
+
+      <div class="section-title">
+        <span>AYUDA</span>
+        <h2>Preguntas frecuentes</h2>
+      </div>
+
+      <div class="faq">
+
+        <details>
+          <summary>¿Necesitan mi contraseña?</summary>
+          <p>
+            No. Para una recarga solamente necesitás proporcionar
+            el ID de tu cuenta.
+          </p>
+        </details>
+
+        <details>
+          <summary>¿Dónde encuentro mi ID?</summary>
+          <p>
+            Abrí Free Fire y entrá a tu perfil. Tu ID aparece
+            en la información de tu cuenta.
+          </p>
+        </details>
+
+        <details>
+          <summary>¿Cómo envío el comprobante?</summary>
+          <p>
+            Después de realizar la transferencia, utilizá el botón
+            de WhatsApp para enviarnos el comprobante.
+          </p>
+        </details>
+
+        <details>
+          <summary>¿Qué métodos de pago aceptan?</summary>
+          <p>
+            Mercado Pago, Ualá, Naranja X y Banco Galicia.
+          </p>
+        </details>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <div class="footer-logo">
+      💎 StyleDiamon
+    </div>
+
+    <p>
+      Venta de diamantes para Free Fire.
+    </p>
+
+    <a
+      href="https://wa.me/5491131361153"
+      target="_blank">
+      📲 Contactar por WhatsApp
+    </a>
+
+    <div class="copyright">
+      © 2026 StyleDiamon. Todos los derechos reservados.
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
